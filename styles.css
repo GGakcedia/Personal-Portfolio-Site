@@ -1,0 +1,131 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #E4DEBE;
+}
+
+#navbar {
+    display: flex;
+    justify-content:right; /* Öğeler arasında eşit boşluk bırakır */
+    align-items: center; /* Dikey olarak ortalar */
+    background-color: #A94438; /* Navbar arkaplan rengi */
+    color: #E4DEBE;
+    padding: 15px 20px;
+}
+
+.nav-link {
+    color: #E4DEBE;
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    font-size: 1.5rem;
+    padding: 15px 25px;
+}
+
+.nav-link:hover {
+    background-color: #D24545; /* Link üzerine gelindiğinde rengi değiştirir */
+}
+.welcome-section{
+    background-color: #637E76;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.project-section{
+    background-color: #D24545;
+    text-align: center;
+    padding: 10rem 2rem;
+}
+.contact-section{
+    background-color: #E6BAA3;
+    color: #D24545;
+    display: grid;
+    font-size: 3rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    justify-content: space-around;
+      
+}
+contact-section:hover {
+    background-color: #E4DEBE; /* Link üzerine gelindiğinde rengi değiştirir */
+}
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.project {
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+.btn-show-all {
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+.btn-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+.fa, .fas {
+    font-weight: 900;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: #637E76;
+    border-top: 4px solid var(--main-red);
+}
